@@ -1,0 +1,22 @@
+@import "../../../../app/styles/variables/global.scss";
+
+.AppLink{
+    color: $text-color;
+    text-decoration: none;
+    transition: color 0.3s;
+    &:hover{
+        color: $text-color-dark;
+    }
+    &::after{
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: $text-color;
+        transition: width 0.3s;
+    }
+    &:hover::after{
+        width: 100%;
+        background-color: $text-color-dark;
+    }
+}
