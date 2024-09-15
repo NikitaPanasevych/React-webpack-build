@@ -1,8 +1,12 @@
-import React from 'react';
-import AppLink from 'shared/ui/AppLink/ui/AppLink';
+import HeroSection from './HeroSection';
+import styles from './styles.module.scss';
 
 const MainPage = () => {
-	return <div>MainPage</div>;
+	return (
+		<div className={styles.main}>
+			<HeroSection />
+		</div>
+	);
 };
 
 export default MainPage;
