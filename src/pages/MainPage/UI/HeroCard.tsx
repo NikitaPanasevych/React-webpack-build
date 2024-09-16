@@ -1,4 +1,4 @@
-import AppButton from 'shared/ui/Button/ui/Button';
+import { AppButton } from 'shared/ui/Button';
 import styles from './styles.module.scss';
 
 const HeroCard = () => {

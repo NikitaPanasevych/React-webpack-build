@@ -1,0 +1,20 @@
+@import '../../../../app/styles/variables/global.scss';
+
+.Card{
+    width: 34rem;
+    height: 25rem;
+    background-color: $light-gray;
+    padding: 6rem 4rem;
+    color: $dark-primary;
+    display: flex;
+    flex-direction: column;
+
+    h4{
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+    p{
+        
+        font-size: 1.6rem;
+    }
+}

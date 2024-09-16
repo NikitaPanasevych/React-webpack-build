@@ -1,11 +1,13 @@
+import FeatureSection from './FeatureSection';
 import HeroSection from './HeroSection';
 import styles from './styles.module.scss';
 
 const MainPage = () => {
 	return (
-		<div className={styles.main}>
+		<main className={styles.main}>
 			<HeroSection />
-		</div>
+			<FeatureSection />
+		</main>
 	);
 };
 
