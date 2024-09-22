@@ -13,5 +13,6 @@ export function buildPlugins({ paths }: BuildOptions): webpack.WebpackPluginInst
 			filename: 'css/[name].[contenthash:8].scss',
 			chunkFilename: '.css/[name].[contenthash:8].scss',
 		}),
+		new webpack.HotModuleReplacementPlugin(),
 	];
 }

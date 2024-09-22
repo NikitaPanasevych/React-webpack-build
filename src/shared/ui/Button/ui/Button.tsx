@@ -3,12 +3,14 @@ import styles from './styles.module.scss';
 export interface AppButtonProps {
 	children: React.ReactNode;
 	onClick?: () => void;
-	className?: string;
+	style?: 'primary' | 'secondary';
 }
 
-const AppButton = ({ children, className, onClick }: AppButtonProps) => {
+const AppButton = ({ children, style, onClick }: AppButtonProps) => {
+	const variantClass = style ? styles[`AppButton__${style}`] : '';
+
 	return (
-		<button className={`${className} ${styles.AppButton}`} onClick={onClick}>
+		<button className={` ${styles.AppButton} ${variantClass}`} onClick={onClick}>
 			{children}
 		</button>
 	);

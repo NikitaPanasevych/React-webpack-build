@@ -1,18 +1,37 @@
 @import '../../../../app/styles/variables/global.scss';
 
-.AppButton{
+.AppButton {
     background-color: $light-gray;
     height: 6rem;
     width: 17rem;
     font-size: 1.6rem;
     font-weight: 400;
     color: $dark-primary;
-    border: 0px;
+    border: none;
     cursor: pointer;
     transition: all 0.3s;
 
-    &:hover{
+    &:hover {
         background-color: $dark-gray;
         color: $primary;
+    }
+
+    &__primary {
+        background-color: $primary;
+        color: $white;
+
+        &:hover {
+            background-color: $dark-primary;
+        }
+    }
+
+    &__secondary {
+        background-color: $white;
+        color: $primary;
+
+        &:hover {
+            background-color: $light-gray;
+            color: $dark-primary;
+        }
     }
 }

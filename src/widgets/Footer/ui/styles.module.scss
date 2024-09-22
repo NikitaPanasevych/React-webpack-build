@@ -1,0 +1,122 @@
+@import "../../../../src/app/styles/variables/global.scss";
+
+.footer{
+    background-color: $dark-primary;
+    color: $white;
+    width: 100%;
+    padding: 6rem 10rem;
+
+    @media screen and (max-width: $tablet){
+        padding: 6rem 4rem 4rem 4rem; 
+    }
+
+    &__container{
+        width: 100%;
+       
+        display: grid;
+        grid-template-areas: 
+        'menu categories about input input'; 
+        ;
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li{
+                margin-bottom: 1rem;
+                font-size: 1.4rem;
+                cursor: pointer;
+                transition: color 0.3s;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+
+
+                &:hover{
+                    color: $primary;
+                }
+            }
+
+            :nth-child(1){
+                font-size: 1.8rem;
+            }
+        }
+
+        &__newsletter{
+            grid-area: input;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: start;
+
+            h4{
+                font-size: 1.6rem;
+                margin-bottom: 2rem;
+                font-weight: 400;
+                width: 100%;
+
+            }
+        }
+        
+        
+        &:nth-child(1){
+            grid-area: menu;
+        }
+        &:nth-child(2){
+            grid-area: categories;
+        }
+        &:nth-child(3){
+            grid-area: about;
+        }
+
+        @media screen and (max-width: $desktop){
+            grid-template-areas: 
+            'menu categories about'
+            ' input input input';
+            gap: 3rem;
+
+        }
+
+        @media screen and (max-width: $tablet){
+            grid-template-areas: 
+            'menu categories about'
+            'input input input';
+        }
+
+        @media screen and (max-width: $mobile){
+            grid-template-areas: 
+            'menu categories'
+            'about about'
+            'input input';
+        }
+
+    }
+
+
+
+    &__social{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5rem;
+        content: '';
+        width: 100%;
+        border-top: 1px solid $white;
+        padding-top: 3rem;
+        font-size: 1.4rem;
+        gap: 1rem;
+
+        &__icons{
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+
+            @media screen and (max-width: $tablet){
+                gap: .5rem;
+            }
+        }
+    }
+
+}
+

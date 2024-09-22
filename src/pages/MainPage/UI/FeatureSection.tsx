@@ -8,22 +8,22 @@ const FeatureSection = () => {
 			<h3>What makes us different?</h3>
 			<div className={styles.features__container}>
 				<FeatureCard>
-					<DeliveryIcon />
+					<DeliveryIcon viewBox="0 0 20 20" height="40" width="40" />
 					<h4>Next day as standard</h4>
 					<p>Order before 3pm and get your order the next day as standard</p>
 				</FeatureCard>
 				<FeatureCard>
-					<DeliveryIcon />
+					<DeliveryIcon viewBox="0 0 20 20" height="40" width="40" />
 					<h4>Next day as standard</h4>
 					<p>Order before 3pm and get your order the next day as standard</p>
 				</FeatureCard>
 				<FeatureCard>
-					<DeliveryIcon />
+					<DeliveryIcon viewBox="0 0 20 20" height="40" width="40" />
 					<h4>Next day as standard</h4>
 					<p>Order before 3pm and get your order the next day as standard</p>
 				</FeatureCard>
 				<FeatureCard>
-					<DeliveryIcon />
+					<DeliveryIcon viewBox="0 0 20 20" height="40" width="40" />
 					<h4>Next day as standard</h4>
 					<p>Order before 3pm and get your order the next day as standard</p>
 				</FeatureCard>

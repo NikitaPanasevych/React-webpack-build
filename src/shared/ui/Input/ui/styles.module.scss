@@ -1,0 +1,17 @@
+@import "../../../../../src/app/styles/variables/global.scss";
+
+.input{
+    width: 100%;
+    display: flex;
+
+    &__primary{
+        background-color: $white;
+    }
+
+    input{
+        height: 6rem;
+        width: 100%;
+        padding: 0 2rem;
+        font-size: 1.6rem
+    }
+}
